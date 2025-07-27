@@ -1,8 +1,8 @@
 # Wallet-risk-scoring-from-scratch
 
-# Wallet Risk Assessment – Compound v2
+# Wallet Risk Assessment – Compound v3
 
-This project analyzes on-chain wallet activity related to the Compound v2 protocol in order to compute and justify wallet-level risk scores. The objective is to create a scalable, explainable pipeline for evaluating wallet behavior and detecting high-risk patterns using DeFi transaction data.
+This project analyzes on-chain wallet activity related to the Compound v3 protocol in order to compute and justify wallet-level risk scores. The objective is to create a scalable, explainable pipeline for evaluating wallet behavior and detecting high-risk patterns using DeFi transaction data.
 
 ---
 
@@ -10,23 +10,23 @@ This project analyzes on-chain wallet activity related to the Compound v2 protoc
 
 | File Name | Purpose |
 |-----------|---------|
-| `compound_v2_transactions.csv` | Raw transaction data from the Compound v2 protocol |
+| `compound_v3_transactions.csv` | Raw transaction data from the Compound v3 protocol |
 | `Wallet id - Sheet1.csv`       | List of wallet addresses to be analyzed |
 | `wallet_risk_scores.csv`       | Final computed risk scores per wallet |
-| `assignment2.ipynb`            | Jupyter notebook containing the full data processing and scoring pipeline |
+| `wallet_scoring.ipynb`            | Jupyter notebook containing the full data processing and scoring pipeline |
 
 ---
 
 ##  Data Collection Method
 
-- **Source**: Ethereum blockchain data focused on Compound v2.
+- **Source**: Ethereum blockchain data focused on Compound v3.
 - **Method**:
   - Used Etherscan API to gather both normal and internal transactions.
-  - Filtered transactions based on contract interactions involving known Compound v2 tokens.
+  - Filtered transactions based on contract interactions involving known Compound v3 tokens.
   - Extracted fields like `functionName`, `value`, `gas`, and `timestamp` for each wallet.
 
 - **Input files**:
-  - `compound_v2_transactions.csv` – full transaction dataset.
+  - `compound_v3_transactions.csv` – full transaction dataset.
   - `Wallet id - Sheet1.csv` – filter for specific wallet addresses.
 
 - **Scalability**: Easily extendable to other DeFi protocols or updated Compound versions by modifying API filters.
