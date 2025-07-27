@@ -6,7 +6,7 @@ This project analyzes on-chain wallet activity related to the Compound v2 protoc
 
 ---
 
-## 📂 Files Overview
+##  Files Overview
 
 | File Name | Purpose |
 |-----------|---------|
@@ -17,7 +17,7 @@ This project analyzes on-chain wallet activity related to the Compound v2 protoc
 
 ---
 
-## 🛠️ Data Collection Method
+##  Data Collection Method
 
 - **Source**: Ethereum blockchain data focused on Compound v2.
 - **Method**:
@@ -33,7 +33,7 @@ This project analyzes on-chain wallet activity related to the Compound v2 protoc
 
 ---
 
-## 🎯 Feature Selection Rationale
+##  Feature Selection Rationale
 
 From the transaction data, we extracted wallet-level features that help infer risk:
 
@@ -52,7 +52,7 @@ These features were chosen based on their interpretability and relevance to typi
 
 ---
 
-## 🧮 Scoring Method
+##  Scoring Method
 
 - **Normalization**: Applied `MinMaxScaler` to scale all features between 0 and 1.
 - **Weighting Scheme**:
@@ -74,7 +74,7 @@ These features were chosen based on their interpretability and relevance to typi
 
 ---
 
-## 🚩 Justification of Risk Indicators Used
+##  Justification of Risk Indicators Used
 
 Each risk indicator reflects behaviors commonly associated with malicious or high-risk wallets:
 
@@ -90,7 +90,7 @@ These indicators are interpretable and align well with both economic and behavio
 
 ---
 
-## ✅ Summary
+##  Summary
 
 This project delivers a transparent, reproducible, and scalable framework to evaluate wallet risk using real DeFi transaction data. The design ensures:
 
